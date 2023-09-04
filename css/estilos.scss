@@ -1081,6 +1081,8 @@ body.dark & {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
     .catalogue__item {
+      margin: auto; 
+      padding: 10px;
       border-radius: 5px;
       box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
       width: 100%;
@@ -1089,6 +1091,7 @@ body.dark & {
         box-shadow: rgba(255, 255, 255, 0.25) 0px 14px 28px, rgba(255, 255, 255, 0.22) 0px 10px 10px;
         }
       .catalogue__item--img {
+        margin: auto;
         width: 100%;
         position: relative;
         img {
