@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-script-type" content="text/javascript">
+    <meta http-equiv="content-style-type" content="text/css">
+    <meta http-equiv="cache-control" content="public">
+    <meta http-equiv="cache-control" content="max-age=0">
+    <meta http-equiv="expires" content="0"> <!--Fri, 18 Jul 2014 1:00:00 GMT-->
+    <meta http-equiv="expires" content="Thu, 31 Dic 2024 1:00:00 GMT">
+    <meta http-equiv="Set-Cookie" content="name=data; path=/; expires=Thu, 31-Dic-2024 1:00:00 GMT">
+    <meta http-equiv="refresh" content="3000"> <!-- "10; https://www.google.com.mx/" También podemos usar la refreshetiqueta meta para redirigir una página a un destino específico. El siguiente ejemplo nos llevará a example.com después de ver la página durante 5 segundos.    -->
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="theme-color" content="#000"> <!--Color del texto fuera del meta viewport-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000"> <!--Color de la pantalla fuera del meta viewport-->
+    <meta name="distribuition" content="global">
+    <meta name="robots" content="index, follow, all, max-snippet:-1"> <!--Index (se toma por defecto), Follow (se toma por defecto), Noindex (se tiene que especificar cuando no queremos que indexe una página), Nofollow (se tiene que especificar cuando no queremos que siga los enlaces de una página)-->
+    <meta name="googlebot" content="index, follow, all">
+    <meta name="google" content="translate">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mario Design - Desarrollador y diseñador Web para tu negocio"> <!-- Atributos title, description y url y type || título de tu página o tu post-->
+    <meta property="og:description" content="¿Quiéres llevar tu negocio al mundo del internét pero no sabes como hacerló? Aquí encontrarás la solución.">
+    <meta property="og:image" content="">
+    <meta property="og:video" content="">
+    <meta property="og:site_name" content="Mario Design - Diseñador y Desarrollador web" />
+    <!-- Open Graph data -->
+    <meta name="revisit-after" content="7 days">
+    <meta name="keywords" content="Diseño de sitios web, desarrollo de sitios web, sitios web económicos"> <!--maximo 3-->
+    <meta name="description" content="¿Quiéres llevar tu negocio al mundo del internét pero no sabes como hacerlo? Aquí encontrarás la solución. Mi nombre es Mario y soy diseñador y desarrollador web."> <!--Descripcion de 150m- 160 caracteres-->
+    <meta name="copyright" content="Mario Design">
+    <meta name="author" content="Mario Design"> <!--El nombre del autor-->
+    <meta name="lenguage" content="spanish"> 
+    <meta name="audience" content="all">
+    <meta name="category" content="Diseño y desarrollo web"> 
+    <meta itemprop="name" content="Mario Design - Diseñador y Desarrollador web"> <!--importante. Datos estructurados: fragmentos destacados, breadcrumbs, enlaces de sitio, tarjetas de redes sociales. https://www.google.com/webmasters/markup-helper/u/0/
+                                  https://developers.google.com/search/docs/appearance/structured-data/generate-structured-data-with-javascript?hl=es // https://developers.google.com/search/docs/appearance/structured-data/product?hl=es#product-review-page-example 
+                                  // https://developers.google.com/search/docs/appearance/structured-data/product?hl=es#pricing-example // https://developers.google.com/search/docs/appearance/structured-data/product?hl=es#product-reviews-->
+    <meta itemprop="description" content="Quiéres llevar tu negocio al mundo del internét pero no sabes como hacerló? Aquí encontrarás la solución. Mi nombre es Mario y soy diseñador y desarrollador web.">
+    <meta itemprop="image" content=""> <!--https://developer.mozilla.org/es/docs/Web/HTML/Global_attributes/itemprop-->
+    <link rel="icon" href="img/logo.svg" type="image/x-icon">
+    <link rel="canonical" href="https://www.mariodesign.com"> <!--ENLACE OPCIONAL-->
+    <!-- <base href="https://www.mariodesign.com/"> -->
+    <title>Mario Design - Desarrollador y Diseñador Web</title>
+    <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css" rel="stylesheet">
+</head>
+<body>
+<a href="https://api.whatsapp.com/send?phone=5544866418" class="btn-wsp" target="_blank">
+  <i class="bi bi-whatsapp"></i>
+</a>
+  <!-- ANIMACIÓN DE CARGA DE SITIO WEB -->
+  <section class="loading" id="onload">
+    <div class="container">
+        <div class="icon">
+          <div class="circles">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span style="--i:9;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+          </div>
+          <h2 class="titulo">Cargando contenido. Espere por favor...</h2>
+        </div>
+    </div>
+  </section>
+  <button class="dark-sun"><span class="bi bi-brightness-high-fill ion-icon"></span><span class="bi bi-moon-fill ion-icon"></span></button>  
+
+<header id="header">
+  <a href="#" class="logo max-titulo">MARIO DESIGN</a>
+  <div class="toggle" id="toggle"><div class="line"></div></div>
+  <nav class="navbar" id="navbar">
+   <ul>
+       <li>
+           <a href="#banner"> Inicio</a>
+       </li>
+       <li>
+           <a href="#AboutUs"> Conocenos</a>
+       </li>
+       <li>
+           <a href="#catalogue"> Catalogo</a>
+       </li>
+       <li>
+           <a href="#service"> Servicios</a>
+       </li>
+       <li>
+           <a href="#contact"> Contacto</a>
+       </li>
+   </ul>
+  </nav>
+
+</header>
+
+<main>
+<section class="banner" id="banner">
+<div class="container">
+  <div id="particles-js">
+    <div class="banner__section">
+      <div class="container container--flex">
+        <div class="column column--50">
+          <div class="banner__txt">
+            <h1 class="max-titulo">¡Hola! Mi nombre es Mario Alberto Álvarez Martínez y soy Diseñador y Desarrollador web</h1>
+            <h2 class="titulo">Mi equipo y yo estamos listos para hacer crecer tu negocio ¿Y tú?</h2>
+            <div class="button__banner">
+              <a href="#contact">Contactame</a>
+            </div>
+          </div>
+        </div>
+        <div class="column column--50">
+          <div class="banner__img">
+            <!-- AUN NO DECIDO QUE APARECERÁ AQUÍ -->
+            <img src="img/Mario Design QR.png" alt="Mario Design - Diseñador y Desarrollador Web">
+          </div>
+        </div>
+      </div>  
+  </div>
+  </div>
+</div>
+</section>
+<div class="container">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path class="wave" fill-opacity="1" d="M0,32L40,80C80,128,160,224,240,261.3C320,299,400,277,480,234.7C560,192,640,128,720,106.7C800,85,880,107,960,138.7C1040,171,1120,213,1200,224C1280,235,1360,213,1400,202.7L1440,192L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+  </svg>
+  
+</div>
+  <section class="AboutUS" id="AboutUS">
+    <div class="container">
+      <h1 class="max-titulo">Conocenos mejor</h1>
+      <div class="AboutUs__info">
+        <div class="container container--flex">
+          <div class="column column--50">
+            <div class="AboutUs__info--img">
+              <img src="img/Mario Design - Ayuda practica para los pequeños emprendedores.jpg" loading="lazy" alt="Mario Design - Diseñador y desarrollador web">
+              <!-- BORDER RADIUS ESTILIZADO COMO ELEMENTO BEFORE Y AFTER CON COLORES DIFERENTES -->
+              <div class="txt">
+                <h1 class="titulo">Mario Design - Diseñador y desarrollador web</h3>
+              </div>
+            </div>
+          </div>
+          <div class="column column--50">
+            <h2 class="titulo">Conoce un poco más de mi y mi trabajo</h1>
+            <blockquote class="AboutUs__info--txt">
+              <p class="texto">
+                <i class="close fa-solid fa-quote-left"></i>
+              ¡Hola! Mi nombre es Mario Alberto Álvarez Martínez y <b>soy diseñador y desarrollador web</b>. Además de ser certificado por Google en
+              <b>comercio electrónico, competencias digitales, Google Merchant Center, Google Ads y marketing digital</b>. Esta empresa se fundó con el 
+              propósito se impulsar pequeños negocios mexicanos y alcanzar la meta que todos quieren para su negocio: Hacerlos crecer.
+              Sabemos que esto no es siempre sencillo. Sin embargo, muchas veces no son las herramientas que usamos si no <b>cómo</b>
+              las usamos. <br> <br>
+              Cómo diseñador y desarrollador web con 5 años de experiencia he visto como muchos negocios se han ido a la quiebra por no
+              contar con un sitio web bien estructurado mientras otros aumenaban su productividad hasta en un <b>65%</b>. No cabe duda que 
+              al día de hoy se cumplen las grandes palabras <cite>'Si un negocio no tiene precencia en internet, entonces no existe'</cite>. 
+              </p>
+              <h3 class="mini-titulo">¿Cúal es mi meta?</h2>
+              <p class="texto">Muchos negocios pequeños no se atreven a contratar servicios de diseño. ¿Po qué?:</p>
+              <ul class="texto">
+                  <li class="texto">Desconocimiento sobre cómo funciona un sitio web para impulsar un negocio.</li>
+                  <li class="texto">Desconfianza por llegar a sufrir algún tipo de fraude con personas con las que no tienen un trato directo.</li>
+                  <li class="texto">Precios muy elevados sin garantizar ninguna seguridad.</li>
+                  <li class="texto">Creer que su negocio no necesita un sitio web.</li>
+                  <li class="texto">No saber a quien recurrir para diseñar un sitio web.</li>
+              </ul>
+              <p class="texto">Teniendo esto en cuenta, es que se creo la empresa conocida cmo <b>Mario Design</b>. 
+              <br><br>Esta microempresa se creo con el propósito de ayudar a pequeños negocios de la Ciudad de México a que puedan
+                tener una precencia poderosa en red. Nuestros precios se adecúan a la nececidad de cada negocio permitiendo así
+              que puedan hacer inversiones que ños beneficiarán a corto y largo plazo dandoles una mayor estabilidad a su negocio.
+              Ese es nuestro propósito así que ¿Están dispuestos a hacer crecer su negocio? Entonces no perdamos tiempo.<i class="open fa-solid fa-quote-right"></i></p>
+              <br><br>
+            </blockquote>
+            <cite class="texto">Mario Alberto Álvarez Martínez - Fundador de Mario Design</cite>
+          </div>
+        </div>
+      </div>
+
+      <div class="AboutUs__skills">
+        <h2 class="titulo">Habiliades</h2>
+        <div class="container container--flex">
+          <div class="column column--50">
+            <h3 class="mini-titulo">HTML5</h3>
+            <div class="barra-skill">
+              <div class="progreso html">95%</div>
+            </div>
+          </div>
+          <div class="column column--50">
+            <h3 class="mini-titulo">CSS</h3>
+           <div class="barra-skill">
+            <div class="progreso css">84%</div>
+           </div>
+          </div>
+          <div class="column column--50">
+            <h3 class="mini-titulo">SASS</h3>
+            <div class="barra-skill">
+              <div class="progreso sass">90%</div>
+            </div>
+          </div>
+          <div class="column column--50">
+            <h3 class="mini-titulo">PHP</h3>
+           <div class="barra-skill">
+            <div class="progreso php">76%</div>
+           </div>
+          </div>
+          <div class="column column--50">
+            <h3 class="mini-titulo">javascript</h3>
+            <div class="barra-skill">
+              <div class="progreso javascript">55%</div>
+            </div>
+          </div>
+          <div class="column column--50">
+            <h3 class="mini-titulo">SQL</h3>
+            <div class="barra-skill">
+              <div class="progreso sql">80%</div>
+            </div>
+          </div>
+          <div class="column column--50">
+            <h3 class="mini-titulo">GitHub</h3>
+            <div class="barra-skill">
+              <div class="progreso github">49%</div>
+            </div>
+          </div>
+          <div class="column column--50">
+            <h3 class="mini-titulo">Boostrap</h3>
+            <div class="barra-skill">
+              <div class="progreso boostrap">66%</div>
+            </div>
+          </div>
+          <div class="column column--50">
+            <h3 class="mini-titulo">Google Ads</h3>
+            <div class="barra-skill">
+              <div class="progreso GoogleA">88%</div>
+            </div>
+          </div>
+          <div class="column column--50">
+            <h3 class="mini-titulo">Marketing Digital</h3>
+            <div class="barra-skill">
+              <div class="progreso MarketingD">90%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="AboutUs__service">  
+        <h2 class="titulo">Nuestros Servicios</h2>
+        <p class="texto">Nuestros servicios serán los indicados para cualquier tipo de negocio. Pero ¿Cómo spn nuestros servicios
+          que pueden ayudar a su negocio?</p>
+        <div class="AboutUs__service--items">
+          <div class="container container--flex">
+            <div class="column column--33">
+              <article class="AboutUs__service--item">
+                <div class="box">
+                  <div class="service__icon1">
+                    <div class="service__icon2">
+                    </div>
+                    <i class="fa-solid fa-person-circle-question"></i>
+                   </div>
+                </div>
+                <div class="service__txt">
+                  <h3 class="sub-titulo">Nos interesamos personalmente por sus negocios</h3>
+                <p class="texto">Sabemos que muchos terminos que se ocupan en el desarrollo web pueden ser desconocidos
+                    para la mayoría. Sin embargo tenemos un interés sincero porque todos los inversionistas entiendan 
+                    a precisión en que están inviertiendo y como eso los está beneficiando. Así que siempre estaremos en la 
+                    dispocisión de brindar la ayuda necesaria para cualquier duda que llegara a surgir. <br>
+                    Siempre ocuparemos las últimas tecnologías para mejorar el rendimiento de su sitio web y hacerlo atrayente y 
+                    atractivo para el publico general. 
+                </div>
+                </p>
+              </article>
+            </div>
+            <div class="column column--33">
+              <article class="AboutUs__service--item">
+                <div class="box">
+                  <div class="service__icon1">
+                    <div class="service__icon2">
+                    </div>
+                    <i class="fa-solid fa-people-carry-box"></i>
+                  </div>
+                </div>
+                <div class="service__txt">
+                  <h3 class="sub-titulo">Gente de confianza, trabajos de confianza.</h3>
+                <p class="texto">Si visitó este sitio web, puede que un servidor haya ido personalmente a presentarse
+                  ofreciendo mis servicios. Puede tener la seguridad de así como tuve la dispocisión de ir a visitarlo,
+                  lo estará un servidor y su equipo para otorgar la ayuda que necesite. Pero si visitó este sitio web buscando en internet, 
+                  tenga la libertad de contactarme de forma directa por cualquier de los medios de comunicación y con gusto podremos vernos para aclarar sus dudas. 
+                  Si no llega a estar contento con alguno de nuestros servicios, siempre habrá una manera de resolverlo para beneficio 
+                  de ambas partes. 
+                </div>
+                </p>
+              </article>
+            </div>
+            <div class="column column--33">
+              <article class="AboutUs__service--item">
+                <div class="box">
+                  <div class="service__icon1">
+                    <div class="service__icon2">
+                    </div>
+                    <i class="fa-solid fa-scale-balanced"></i>
+                  </div>
+                </div>
+                <div class="service__txt">
+                  <h3 class="sub-titulo">Precios ajustables para cada tipo de negocio</h3> <!--darle una clase para pocisionar el texto-->
+                <p class="texto">Sabemos que cada negocio es distinto y, por ello, cada uno requiere de ayudas especificas para 
+                    hacerlo crecer. En Mario Design entendemos este punto. Así que siempre nos ajustaremos al tamaño de su negocio
+                    para que la inversión que haga en un sitio web sea la mejor, la mas viable, la más segura y la más económica. Claro,
+                    Sin descuidar jamás la estética y la presentación que deben de ser de la mejor calidad.
+                </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="catalogue" id="catalogue">
+        <h2 class="titulo">Catalogo de proyectos</h2>
+        <!-- <div class="catalogue__alert">
+          <h2 class="titulo">Estamos trabajando en proyectos asombrosos</h2>
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <h2 class="titulo">Si quieres que tu proyecto aparezca en este apartado, <a href="#contact">Contactanos</a> por cualquiera de nuestros
+          medios y se parte de esta comunidad de emprendedores.</h2>
+        </div> -->
+        <div class="catalogue__container">
+            <div class="catalogue__item">
+              <div class="catalogue__item--img">
+                <img src="img/Mario Design - layout.png" alt="Mario Design - layout">
+                <div class="catalogue__item--info">
+                  <a href="https://github.com/MarioDesign101" target="_blank">Ver layout desde <ion-icon name="logo-github"></ion-icon> GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="catalogue__item">
+              <div class="catalogue__item--img">
+                <img src="img/Mario Design - layout2.png" alt="Mario Design - layout 2">
+                <div class="catalogue__item--info">
+                  <a href="https://github.com/MarioDesign101" target="_blank">Ver layout desde <ion-icon name="logo-github"></ion-icon> GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="catalogue__item">
+              <div class="catalogue__item--img">
+                <img src="img/Mario Design - layout3.png" alt="Mario Design - layout 3">
+                <div class="catalogue__item--info">
+                  <a href="https://github.com/MarioDesign101" target="_blank">Ver layout desde <ion-icon name="logo-github"></ion-icon> GitHub</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="service" id="service">
+    <div class="container">
+      <h1 class="max-titulo">Nuestros servicios a precios accesibles</h1>
+            <div class="carousel">
+                <button aria-label="anterior" class="carousel__preview">
+                    <i class="bi bi-caret-left-fill"></i>
+                </button>
+                   <div class="carousel__list">
+                    <div class="carousel__item">
+                        <!-- añadir nuestros servicios -->
+                          <h2 class="titulo">One Page</h2>
+                          <p class="texto">¿Qué es una One Page? <br>
+                              Una Landing Page es una pagina de aterrizaje que cumple solamente un objetivo: Interactuar y conseguir clientes. 
+                              Permite conseguir datos de posibles clientes para poder promocionar un producto o servicio. He aquí algunos modelos: 
+                            </p>
+                          <h3 class="sub-titulo precio"> Costo aproximado: $2560 MXN</h3>
+                          <h3 class="sub-titulo">Nuestro servicio incluye:</h3>
+                          <ul>
+                              <li class="texto">Hosting y dominio</li>
+                              <li class="texto">Almacenamiento ilimitado</li>
+                              <li class="texto">Certificado SSL gratis</li>
+                              <li class="texto">1 Correo electrónico empresarial</li>
+                              <li class="texto">SEO incluído</li>
+                              <li class="texto">Diseño responsive (Diseño para dispositivos moviles)</li>
+                              <li class="texto">Base de datos para formulario de contacto</li>
+                              <li class="texto">Mantenimiento diario de la One Page</li>
+                          </ul>
+                          <ul>
+                              <li class="texto">Mantenimiento y administración de redes sociales en su opción de Bussines:
+                                  <ul>
+                                      <li class="texto">Facebook Bussines</li>
+                                      <li class="texto">Twitter Bussines</li>
+                                      <li class="texto">Instagram Bussines</li>
+                                      <li class="texto">Whatsapp Bussines</li>
+                                      <li class="texto">Gmail Bussines</li>
+                                  </ul>
+                              </li>
+                              <li class="texto">Actualización de contenido sin ningún costo extra</li>
+                          </ul>
+                          <i>El precio puede llegar a variar minimamente dependiendo de lo que requiera su negocio.</i>
+                          <div class="service__item--button">
+                              <a href="#contact" title="Solicitar servicio">Elegir Paquete</a>
+                          </div>
+                    </div>
+                    <div class="carousel__item">
+                      <h2 class="titulo">Sitio Web</h2>
+                      <p class="texto">¿Cuál es la ventaja de un Sitio Web? <br>
+                          Sirve como una carta presentación para que conoscan a la empresa, los tipos de servicios que ofrecen, una pagina de contacto y 
+                          otras funciones que sirven para que las personas los conozcan más a fondo. Estos son algunos diseños: 
+                         </p>
+                      <h3 class="sub-titulo precio"> Costo aproximado: $3750 MXN</h3>
+                      <h3 class="sub-titulo">Nuestro servicio incluye:</h3>
+                      <ul>
+                          <li class="texto">Hosting y dominio</li>
+                          <li class="texto">Almacenamiento ilimitado</li>
+                          <li class="texto">Certificado SSL gratis</li>
+                          <li class="texto">1 Correo electrónico empresarial</li>
+                          <li class="texto">SEO incluído</li>
+                          <li class="texto">Diseño responsive (Diseño para dispositivos moviles)</li>
+                          <li class="texto">Base de datos para sistema general</li>
+                          <li class="texto">Mantenimiento diario del Sitio Web</li>
+                          <li class="texto">Creación de 3 - 5 paginas dentro del sitio web (La creación de más paginas tendrá un costo 
+                          aparte dependiendo de las funcionalidades que se requieran)</li>
+                      </ul>
+                      <ul>
+                          <li class="texto">Mantenimiento y administración de redes sociales en su opción de Bussines:
+                              <ul>
+                                  <li class="texto">Facebook Bussines</li>
+                                  <li class="texto">Twitter Bussines</li>
+                                  <li class="texto">Instagram Bussines</li>
+                                  <li class="texto">Whatsapp Bussines</li>
+                                  <li class="texto">Gmail Bussines</li>
+                              </ul>
+                          </li>
+                          <li class="texto">Actualización de contenido sin ningún costo extra</li>
+                      </ul>
+                      <i>El precio puede llegar a variar minimamente dependiendo de lo que requiera su negocio.</i>
+                      <div class="service__item--button">
+                          <a href="#contact" title="Solicitar servicio">Elegir Paquete</a>
+                      </div>
+                  </div>
+                  <div class="carousel__item">
+                      <h2 class="titulo">Blog</h2>
+                      <p class="texto">¿Podrías aprovechar el uso de un blog? <br>
+                          Un Blog puede ayudar mucho a que las personas se mantengan al día con las novedades sobre productos, servicios, cambios y otras
+                          cosas que les gustaría que sus clientes supieran.
+                      </p>
+                      <h3 class="sub-titulo precio"> Costo aproximado: $4680 MXN</h3>
+                      <h3 class="sub-titulo">Nuestro servicio incluye:</h3>
+                      <ul>
+                          <li class="texto">Hosting y dominio</li>
+                          <li class="texto">Almacenamiento ilimitado</li>
+                          <li class="texto">Certificado SSL gratis</li>
+                          <li class="texto">1 Correo electrónico empresarial</li>
+                          <li class="texto">SEO incluído</li>
+                          <li class="texto">Diseño responsive (Diseño para dispositivos moviles)</li>
+                          <li class="texto">Base de datos para formulario de contacto</li>
+                          <li class="texto">Mantenimiento diario del Sitio Web</li>
+                          <li class="texto">Creación de 3 - 6 paginas dentro del sitio web (La creación de más paginas tendrá un costo 
+                          aparte dependiendo de las funcionalidades que se requieran)</li>
+                          <li class="texto">Creación de un minimo de 5 cuentas aparte de la cuenta <b>administrador</b> con la opción de 
+                          postear, eliminar u otorgar permisos dentro del sitio web. Esta funcionalidad contará con una mini capacitación del 
+                          funcionamiento del sistema.</li>
+                      </ul>
+                      <ul>
+                          <li class="texto">Mantenimiento y administración de redes sociales en su opción de Bussines:
+                              <ul>
+                                  <li class="texto">Facebook Bussines</li>
+                                  <li class="texto">Twitter Bussines</li>
+                                  <li class="texto">Instagram Bussines</li>
+                                  <li class="texto">Whatsapp Bussines</li>
+                                  <li class="texto">Gmail Bussines</li>
+                              </ul>
+                          </li>
+                          <li class="texto">Actualización de contenido sin ningún costo extra</li>
+                          <li class="texto">Creación de cuentas nuevas con permisos para actualizar el blog (Después de 10 cuentas cada una
+                          costará $55 MXN).</li>
+                      </ul>
+                      <i>El precio puede llegar a variar minimamente dependiendo de lo que requiera su negocio.</i>
+                      <div class="service__item--button">
+                          <a href="#contact" title="Solicitar servicio">Elegir Paquete</a>
+                      </div>
+                  </div>
+                  <div class="carousel__item">
+                      <h2 class="titulo">Sitio web de reservaciones</h2>
+                      <p class="texto">¿Cómo podría funcionar un sistema de reservaciones? <br>
+                          Este sirve principalmente para algunos restaurantes que necesitan que las personas hagan reservaciones. He aqui algunos modelos:
+                      </p>
+                      <h3 class="sub-titulo precio"> Costo aproximado: $5360 MXN</h3>
+                      <h3 class="sub-titulo">Nuestro servicio incluye:</h3>
+                      <ul>
+                          <li class="texto">Hosting y dominio</li>
+                          <li class="texto">Almacenamiento ilimitado</li>
+                          <li class="texto">Certificado SSL gratis</li>
+                          <li class="texto">1 Correo electrónico empresarial</li>
+                          <li class="texto">SEO incluído</li>
+                          <li class="texto">Diseño responsive (Diseño para dispositivos moviles)</li>
+                          <li class="texto">Base de datos para sistema general</li>
+                          <li class="texto">Mantenimiento diario del Sitio Web</li>
+                          <li class="texto">Funciones del sistema: 
+                              <ul>
+                                  <li class="texto">Administración de usuarios</li>
+                                  <li class="texto">Reservación previa</li>
+                                  <li class="texto">Reservación de tareas</li>
+                                  <li class="texto">Atención online a usuarios registrados</li>
+                                  <li class="texto">Administración del catálogo del sitio web</li>
+                                  <li class="texto">Descargar reservación en formato PDF, Excel y jpg</li>
+                              </ul>
+                          </li>
+                          <li class="texto">Reservaciones ilimitadas</li>
+                      </ul>
+                      <ul>
+                          <li class="texto">Mantenimiento y administración de redes sociales en su opción de Bussines:
+                              <ul>
+                                  <li class="texto">Facebook Bussines</li>
+                                  <li class="texto">Twitter Bussines</li>
+                                  <li class="texto">Instagram Bussines</li>
+                                  <li class="texto">Whatsapp Bussines</li>
+                                  <li class="texto">Gmail Bussines</li>
+                              </ul>
+                          </li>
+                          <li class="texto">Actualización de contenido sin ningún costo extra</li>
+                      </ul>
+                      <i>El precio puede llegar a variar minimamente dependiendo de lo que requiera su negocio.</i>
+                      <div class="service__item--button">
+                          <a href="#contact" title="Solicitar servicio">Elegir Paquete</a>
+                      </div>
+                  </div>
+                   </div>
+                <button aria-label="Siguiente" class="carousel__next">
+                    <i class="bi bi-caret-right-fill"></i>
+                </button>
+             </div>
+             <div role="tablist" class="carousel__indicadores"></div>
+        </div>
+    </section>
+    
+  
+    <section class="contact" id="contact">
+    <div class="container">
+      <h1 class="max-titulo">Contactanos</h1>
+      <div class="container container--flex">
+        <div class="column column--50">
+          <div class="contact__info">
+            <h2 class="titulo">¿Por qué contactarnos?</h2>
+            <p class="texto">Muchas personas se toman la libertad de escribirnos desde el formulario que se encuentra a continuación. <br>
+            En este mismo pueden escribirnos sobre dudas, cotizaciones, proyectos especiales, contrataciones u otro servicio del cual les gustaría
+            conocer más a detalle ¿Dónde más nos pueden encontrar?</p>
+            <div class="contact__info--social">
+                <a href="https://www.facebook.com/profile.php?id=100095572476498" title="Facebook">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="https://twitter.com/home?logout=1691452869633" title="Twitter">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a href="https://www.instagram.com/mariodesign_101/" title="Instagram">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=5544866418" title="Whatsapp">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+                <a href="https://github.com/MarioDesign101" title="GitHub">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+            </div>
+            <p class="texto">¿Sabes usar algunas de estas plataformas o aplicaciones? Entonces no dudes en visitarnos en cada una de ellas. Sin duda el 
+                contenido que tenemos para ti te será de gran ayuda para potencializar el crecimiento de tu negocio. Estamos a tus ordenes. 
+            </p>
+        </div>
+        </div>
+        <div class="column column--50">
+          <div class="contact__form"> <!--Validar con javascript-->
+            <form action="https://formsubmit.co/marioalvweb@gmail.com" id="formulario" method="post" name="emailContact" enctype="multipart/form-data" onsubmit="return validar();">
+             <div class="form__flex">
+              <div class="item">
+                <label for="" class="contact__form--label">Nombre completo:</label>
+             <input type="text" name="nombre" id="nombre" class="contact__form--input nombre" placeholder="Ejemp. Jhon Doe" tabindex="1">
+              </div>
+
+             <div class="item">
+             <label for="" class="contact__form--label">Número de contacto:</label>
+                <input type="text" name="telefono" id="telefono" class="contact__form--input telefono" placeholder="99-9999-9999" tabindex="3">
+             </div>
+             </div>
+             <label for="" class="contact__form--label">Correo electrónico:</label>
+             <input type="text" name="email" id="email" class="contact__form--input email" placeholder="exemple@dominio.com" tabindex="2">
+              
+             <label for="" class="contact__form--label">Asunto:</label>
+             <textarea type="text" name="comentario" id="comentario" tabindex="5" cols="30" rows="10" class="contact__form--textarea comentario" placeholder="Deje un comentario respecto a su proyecto"></textarea>
+           
+             <input class="boton" name="enviar" type="submit" tabindex="6">
+            <input class="boton" type="reset">
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/PORTAFOLIO/exito/index.html">
+            
+            </form>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container">
+      <div class="container container--flex">
+          <div class="column column--33">
+              <h4 class="mini-titulo">¿Por qué contactarnos?</h4>
+              <p class="texto">Mario Design es una pequeña empresa destinada a hacer crecer pequeños negocios. Como ustedes queridos lectores, sabemos que no es
+                  nada sencillo lograr que un negocio crezca. Por eso nos interesamos ampliamente en que usen las herramientas adecuadas para que vean las ganancias
+                  que tanto desean. 
+              </p>
+          </div>
+          <div class="column column--33">
+              <h4 class="mini-titulo">Contacto</h4>
+              <p class="texto">
+                  <span><ion-icon name="call-outline"></ion-icon> 55-4486-6418</span>
+                  <span><ion-icon name="call-outline"></ion-icon> 55-5761-3771</span>
+                  <a href="https://www.facebook.com/profile.php?id=100095572476498" target="_blank">
+                      <ion-icon name="logo-facebook"></ion-icon> Facebook
+                  </a>
+                  <a href="https://twitter.com/home?logout=1691452869633" target="_blank">
+                      <ion-icon name="logo-twitter"></ion-icon> Twitter
+                  </a>
+                  <a href="https://www.instagram.com/mariodesign_101/" target="_blank">
+                      <ion-icon name="logo-instagram"></ion-icon> Instagram
+                  </a>
+                  <a href="https://api.whatsapp.com/send?phone=5544866418" target="_blank">
+                      <ion-icon name="logo-whatsapp"></ion-icon> Whatsapp
+                  </a>
+                  <a href="https://github.com/MarioDesign101" target="_blank">
+                      <ion-icon name="logo-github"></ion-icon> GitHub
+                  </a>
+                  <a href="https://g.page/r/CQKN1mTHmB6LEAI/review"><i class="fa-brands fa-google"></i> Danos tu opinión y sugerencias para mejorar nuestros servicios</a>
+              </p>
+          </div>
+          <div class="column column--33">
+              <h4 class="mini-titulo">¿Dónde encontrarnos?</h4>
+              <span><ion-icon name="location-outline"></ion-icon> Fernando Alva Ixtlixochtil #117 Col. Obrera Del. Cuauhtémoc C.P 06800, Ciudad de México, México</span>
+          </div>
+      </div>
+  </div>
+</footer>
+<div class="copy">
+  <p class="texto"> &copy; 2023 | Mario Design - Todos los derechos reservados</p>
+</div>
+<!-------------------------------------------- ITEM PROPMP ------------------------------------------ -->
+
+<div itemtype="https://schema.org/Product" itemscope>
+      <meta itemprop="name" content="Mario Alberto Áñvarez Martínez" />
+      <meta itemprop="description" content="¿Quiéres llevar tu negocio al mundo del internét pero no sabes como hacerló? Aquí encontrarás la solución. Mi nombre es Mario y soy diseñador y desarrollador web." />
+      <div itemprop="aggregateRating" itemtype="https://schema.org/AggregateRating" itemscope>
+        <meta itemprop="reviewCount" content="89" />
+        <meta itemprop="ratingValue" content="4.4" />
+      </div>
+      <div itemprop="review" itemtype="https://schema.org/Review" itemscope>
+        <div itemprop="author" itemtype="https://schema.org/Person" itemscope>
+          <meta itemprop="name" content="Mario Alberto Álvarez Martínez" />
+        </div>
+        <div itemprop="reviewRating" itemtype="https://schema.org/Rating" itemscope>
+          <meta itemprop="ratingValue" content="4" />
+          <meta itemprop="bestRating" content="5" />
+        </div>
+      </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/carousel.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
+<script src="js/preloader.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="js/particles.min.js"></script>
+<script>
+  particlesJS(
+    {
+  "particles": {
+    "number": {
+      "value": 160,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#004b4b"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#004b4b"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#004b4b",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 1.8,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1600
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
+  )
+</script>
+<script src="js/formulario.js"></script>
+<script src="https://kit.fontawesome.com/419a1881b0.js" crossorigin="anonymous"></script>
+<script src="js/dark.js"></script>
+<script src="js/scroll.js"></script>
+</body>
+</html>
