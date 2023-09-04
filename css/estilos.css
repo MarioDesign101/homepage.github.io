@@ -183,17 +183,6 @@ mark, strong, em, b, i, mark, u, s, span, cite, a {
 }
 
 .mini-titulo {
-  font-size: 0.8rem;
-  font-family: "Ysabeau SC", sans-serif;
-  margin-bottom: 15px;
-  padding: 5px;
-  word-wrap: break-word;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-
-.sub-titulo {
   font-size: 0.9rem;
   font-family: "Ysabeau SC", sans-serif;
   margin-bottom: 15px;
@@ -204,8 +193,19 @@ mark, strong, em, b, i, mark, u, s, span, cite, a {
           user-select: none;
 }
 
+.sub-titulo {
+  font-size: 1rem;
+  font-family: "Ysabeau SC", sans-serif;
+  margin-bottom: 15px;
+  padding: 5px;
+  word-wrap: break-word;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 .titulo {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-family: "Ysabeau SC", sans-serif;
   margin-bottom: 15px;
   padding: 5px;
@@ -216,7 +216,7 @@ mark, strong, em, b, i, mark, u, s, span, cite, a {
 }
 
 .max-titulo {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-family: "Ysabeau SC", sans-serif;
   margin-bottom: 15px;
   padding: 5px;
@@ -1013,8 +1013,6 @@ body.dark #AboutUS .AboutUs__skills .barra-skill {
   gap: 20px;
 }
 #AboutUS .catalogue .catalogue__container .catalogue__item {
-  margin: auto; 
-  padding: 10px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   width: 100%;
@@ -1621,19 +1619,19 @@ body.dark .copy {
     padding: 2px;
   }
   .mini-titulo {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     margin-bottom: 10px;
   }
   .sub-titulo {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 10px;
   }
   .titulo {
-    font-size: 1.45rem;
+    font-size: 1.55rem;
     margin-bottom: 10px;
   }
   .max-titulo {
-    font-size: 2.45rem;
+    font-size: 2.55rem;
     margin-bottom: 10px;
   }
 }
@@ -1670,19 +1668,19 @@ body.dark .copy {
     padding: 2px;
   }
   .mini-titulo {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     margin-bottom: 10px;
   }
   .sub-titulo {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
   }
   .titulo {
-    font-size: 1.55rem;
+    font-size: 1.65rem;
     margin-bottom: 10px;
   }
   .max-titulo {
-    font-size: 2.55rem;
+    font-size: 2.65rem;
     margin-bottom: 10px;
   }
 }
@@ -1757,19 +1755,19 @@ body.dark .copy {
     padding: 2px;
   }
   .mini-titulo {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-bottom: 10px;
   }
   .sub-titulo {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
   }
   .titulo {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 10px;
   }
   .max-titulo {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     margin-bottom: 10px;
   }
   #contact .container--flex .column--50:first-child .contact__info {
