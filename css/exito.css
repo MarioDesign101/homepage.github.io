@@ -1,0 +1,42 @@
+.alert {
+  width: 100%;
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+.alert .alert__cuadro {
+  position: relative;
+  width: 95%;
+  margin: auto;
+  padding: 15px;
+  background: rgb(32, 147, 3);
+  color: rgba(255, 255, 255, 0.766);
+}
+.alert .alert__cuadro .check {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -50px;
+}
+.alert .alert__cuadro .check i {
+  background: rgb(32, 147, 3);
+  border-radius: 50%;
+  font-size: 60px;
+  padding: 10px;
+}
+.alert .alert__cuadro .titulo a {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.766);
+}
+.alert .alert__cuadro .texto {
+  background: rgba(255, 255, 255, 0.766);
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #000;
+}/*# sourceMappingURL=exito.css.map */
