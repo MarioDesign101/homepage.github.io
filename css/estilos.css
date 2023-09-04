@@ -1013,6 +1013,8 @@ body.dark #AboutUS .AboutUs__skills .barra-skill {
   gap: 20px;
 }
 #AboutUS .catalogue .catalogue__container .catalogue__item {
+  margin: auto; 
+  padding: 10px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   width: 100%;
@@ -1022,6 +1024,7 @@ body.dark #AboutUS .catalogue .catalogue__container .catalogue__item {
   box-shadow: rgba(255, 255, 255, 0.25) 0px 14px 28px, rgba(255, 255, 255, 0.22) 0px 10px 10px;
 }
 #AboutUS .catalogue .catalogue__container .catalogue__item .catalogue__item--img {
+  margin: auto;
   width: 100%;
   position: relative;
 }
