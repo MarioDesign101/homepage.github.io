@@ -166,7 +166,7 @@ img {
 }
 
 .texto {
-  font-size: 1rem;
+  font-size: 1em;
   font-family: "Anaheim", sans-serif;
   word-wrap: break-word;
   -webkit-user-select: none;
@@ -179,11 +179,11 @@ mark, strong, em, b, i, mark, u, s, span, cite, a {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  font-size: 0.6rem;
+  font-size: 1em;
 }
 
 .mini-titulo {
-  font-size: 0.9rem;
+  font-size: 0.9em;
   font-family: "Ysabeau SC", sans-serif;
   margin-bottom: 15px;
   padding: 5px;
@@ -194,7 +194,7 @@ mark, strong, em, b, i, mark, u, s, span, cite, a {
 }
 
 .sub-titulo {
-  font-size: 1rem;
+  font-size: 1em;
   font-family: "Ysabeau SC", sans-serif;
   margin-bottom: 15px;
   padding: 5px;
@@ -205,7 +205,7 @@ mark, strong, em, b, i, mark, u, s, span, cite, a {
 }
 
 .titulo {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-family: "Ysabeau SC", sans-serif;
   margin-bottom: 15px;
   padding: 5px;
@@ -216,7 +216,7 @@ mark, strong, em, b, i, mark, u, s, span, cite, a {
 }
 
 .max-titulo {
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-family: "Ysabeau SC", sans-serif;
   margin-bottom: 15px;
   padding: 5px;
@@ -810,9 +810,6 @@ body.dark #AboutUS .AboutUs__info .AboutUs__info--img .txt .titulo {
   margin-bottom: -10px;
   padding: 5px;
   position: relative;
-}
-#AboutUS .AboutUs__info .AboutUs__info--txt .texto:first-child::first-letter {
-  font-size: 4rem;
 }
 #AboutUS .AboutUs__info .AboutUs__info--txt ul {
   margin: 10px 0px 10px 15px;
@@ -1612,26 +1609,26 @@ body.dark .copy {
     width: 49%;
   }
   p, strong, em, b, i, mark, u, s, span, cite, a {
-    font-size: 1.1rem;
+    font-size: 1.1em;
   }
   mark {
     margin: 2px 2px 0px 0px;
     padding: 2px;
   }
   .mini-titulo {
-    font-size: 0.85rem;
+    font-size: 0.85em;
     margin-bottom: 10px;
   }
   .sub-titulo {
-    font-size: 1.1rem;
+    font-size: 1.2em;
     margin-bottom: 10px;
   }
   .titulo {
-    font-size: 1.55rem;
+    font-size: 1.55em;
     margin-bottom: 10px;
   }
   .max-titulo {
-    font-size: 2.55rem;
+    font-size: 2.55em;
     margin-bottom: 10px;
   }
 }
@@ -1661,26 +1658,26 @@ body.dark .copy {
     margin: auto;
   }
   p, strong, em, b, i, mark, u, s, span, cite, a {
-    font-size: 1.25rem;
+    font-size: 1.25em;
   }
   mark {
     margin: 2px 2px 0px 0px;
     padding: 2px;
   }
   .mini-titulo {
-    font-size: 0.95rem;
+    font-size: 0.95em;
     margin-bottom: 10px;
   }
   .sub-titulo {
-    font-size: 1.2rem;
+    font-size: 1.3em;
     margin-bottom: 10px;
   }
   .titulo {
-    font-size: 1.65rem;
+    font-size: 1.65em;
     margin-bottom: 10px;
   }
   .max-titulo {
-    font-size: 2.65rem;
+    font-size: 2.65em;
     margin-bottom: 10px;
   }
 }
@@ -1748,26 +1745,26 @@ body.dark .copy {
     width: 19%;
   }
   p, strong, em, b, i, mark, u, s, span, cite, a {
-    font-size: 1.35rem;
+    font-size: 1.35em;
   }
   mark {
     margin: 2px 2px 0px 0px;
     padding: 2px;
   }
   .mini-titulo {
-    font-size: 0.9rem;
+    font-size: 0.9em;
     margin-bottom: 10px;
   }
   .sub-titulo {
-    font-size: 1.2rem;
+    font-size: 1.4em;
     margin-bottom: 10px;
   }
   .titulo {
-    font-size: 1.6rem;
+    font-size: 1.6em;
     margin-bottom: 10px;
   }
   .max-titulo {
-    font-size: 2.6rem;
+    font-size: 2.6em;
     margin-bottom: 10px;
   }
   #contact .container--flex .column--50:first-child .contact__info {

@@ -183,7 +183,7 @@ img {
 }
 
 .texto {
-  font-size: 1rem;
+  font-size: 1em;
   font-family: $texto__fuente;
   word-wrap: break-word;
   user-select: none;
@@ -192,11 +192,11 @@ img {
 mark, strong, em, b, i, mark, u, s, span, cite, a {
   font-family: $texto__fuente;
   user-select: none;
-  font-size: .6rem;
+  font-size: 1em;
 }
 
 .mini-titulo {
-  font-size: .9rem;
+  font-size: .9em;
   font-family:  'Ysabeau SC', sans-serif;
   margin-bottom: 15px;
   padding: 5px;
@@ -205,7 +205,7 @@ mark, strong, em, b, i, mark, u, s, span, cite, a {
 }
 
 .sub-titulo {
-  font-size: 1rem;
+  font-size: 1em;
   font-family: 'Ysabeau SC', sans-serif;
   margin-bottom: 15px;
   padding: 5px;
@@ -214,7 +214,7 @@ mark, strong, em, b, i, mark, u, s, span, cite, a {
 }
 
 .titulo {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-family:  'Ysabeau SC', sans-serif;
   margin-bottom: 15px;
   padding: 5px;
@@ -223,7 +223,7 @@ mark, strong, em, b, i, mark, u, s, span, cite, a {
 }
 
 .max-titulo {
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-family: 'Ysabeau SC', sans-serif;
   margin-bottom: 15px;
   padding: 5px;
@@ -837,10 +837,6 @@ body.dark & {
     margin-bottom: -10px; 
     padding: 5px;
     position: relative;
-
-    .texto:first-child::first-letter {
-      font-size: 4rem;
-    }
 
     ul {
       margin: 10px 0px 10px 15px;
@@ -1684,7 +1680,7 @@ footer {
   }
 
   p, strong, em, b, i, mark, u, s, span, cite, a {
-    font-size: 1.1rem;
+    font-size: 1.1em;
   }
   
   mark {
@@ -1693,22 +1689,22 @@ footer {
   }
   
   .mini-titulo {
-    font-size: .85rem;
+    font-size: .85em;
     margin-bottom: 10px;
   }
   
   .sub-titulo {
-    font-size: 1.1rem;
+    font-size: 1.2em;
     margin-bottom: 10px;
   }
   
   .titulo {
-    font-size: 1.55rem;
+    font-size: 1.55em;
     margin-bottom: 10px;
   }
   
   .max-titulo {
-    font-size: 2.55rem;
+    font-size: 2.55em;
     margin-bottom: 10px;
   }
 }
@@ -1752,7 +1748,7 @@ footer {
     }
   
     p, strong, em, b, i, mark, u, s, span, cite, a {
-      font-size: 1.25rem;
+      font-size: 1.25em;
     }
     
     mark {
@@ -1761,22 +1757,22 @@ footer {
     }
     
     .mini-titulo {
-      font-size: .95rem;
+      font-size: .95em;
       margin-bottom: 10px;
     }
     
     .sub-titulo {
-      font-size: 1.20rem;
+      font-size: 1.30em;
       margin-bottom: 10px;
     }
     
     .titulo {
-      font-size: 1.65rem;
+      font-size: 1.65em;
       margin-bottom: 10px;
     }
     
     .max-titulo {
-      font-size: 2.65rem;
+      font-size: 2.65em;
       margin-bottom: 10px;
     }
   }
@@ -1861,7 +1857,7 @@ footer {
   }
 
   p, strong, em, b, i, mark, u, s, span, cite, a {
-    font-size: 1.35rem;
+    font-size: 1.35em;
   }
   
   mark {
@@ -1870,22 +1866,22 @@ footer {
   }
   
   .mini-titulo {
-    font-size: .90rem;
+    font-size: .90em;
     margin-bottom: 10px;
   }
   
   .sub-titulo {
-    font-size: 1.20rem;
+    font-size: 1.40em;
     margin-bottom: 10px;
   }
   
   .titulo {
-    font-size: 1.60rem;
+    font-size: 1.60em;
     margin-bottom: 10px;
   }
   
   .max-titulo {
-    font-size: 2.60rem;
+    font-size: 2.60em;
     margin-bottom: 10px;
   }
 
